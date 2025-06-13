@@ -5,16 +5,13 @@
   - Apache Maven 3.9.7
  
 <div style="display: flex; justify-content: space-between; gap: 20px;">
-    <!-- First Image -->
-   
-      
-  
- <div  style="width: 500px; height: auto;">
-    ![chrome_4SG2tfQEhs](https://github.com/user-attachments/assets/8d2d9774-aa4f-4370-960a-5a374f3fab36)
+     <div  style="width: 500px; height: auto;">
+![chrome_4SG2tfQEhs](https://github.com/user-attachments/assets/27226680-91fb-4871-b09f-4f7cc3b9f9a4)
+
       </div>
 
        <div  style="width: 500px; height: auto;">
-   ![chrome_yCt23ZifoV](https://github.com/user-attachments/assets/9b2c5ff1-21db-4bfa-82f0-982e0c0604c4)
+![chrome_yCt23ZifoV](https://github.com/user-attachments/assets/bdb2aac9-0a90-4778-b9cf-eb37e5a37583)
 
      </div>
 </div>
