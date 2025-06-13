@@ -6,20 +6,21 @@
  
 <div style="display: flex; justify-content: space-between; gap: 20px;">
     <!-- First Image -->
-    <div>
-        <img src="https://github.com/user-attachments/assets/8d2d9774-aa4f-4370-960a-5a374f3fab36" 
-             alt="Image 1" style="width: 500px; height: auto;"/>
-    </div>
-    
-    <!-- Second Image -->
-    <div>
-        <img src="https://github.com/user-attachments/assets/9b2c5ff1-21db-4bfa-82f0-982e0c0604c4" 
-             alt="Image 2" style="width: 500px; height: auto;"/>
-    </div>
+   
+      
+  
+ <div  style="width: 500px; height: auto;">
+    ![chrome_4SG2tfQEhs](https://github.com/user-attachments/assets/8d2d9774-aa4f-4370-960a-5a374f3fab36)
+      </div>
+
+       <div  style="width: 500px; height: auto;">
+   ![chrome_yCt23ZifoV](https://github.com/user-attachments/assets/9b2c5ff1-21db-4bfa-82f0-982e0c0604c4)
+
+     </div>
 </div>
  
 
- 
+
  Desenvolvimento Supply Mida
  
  Objetivo: avaliar os conhecimentos tecnicos dos candidatos a desenvolvedor
