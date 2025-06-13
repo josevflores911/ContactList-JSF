@@ -5,9 +5,9 @@
   - Apache Maven 3.9.7
  
 
-<div style="display: flex; justify-content: space-between; gap: 20px;">
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px; height: 100vh;">
     <img src="https://github.com/user-attachments/assets/8d2d9774-aa4f-4370-960a-5a374f3fab36" 
-         alt="Image 1" style="width: 300px; height: auto;">
+         alt="Image 1" style="width: 500px; height: auto;">
 </div>
 
 
