@@ -1,13 +1,21 @@
- Teste de desenvolvimento Supply Mida
+
+  Pré-requisitos: 
+  - Java JDK 17
+  - Wildfly 24.0.1.Final
+  - Apache Maven 3.9.7
+ 
+ ![chrome_4SG2tfQEhs](https://github.com/user-attachments/assets/8d2d9774-aa4f-4370-960a-5a374f3fab36)
+
+ ![chrome_yCt23ZifoV](https://github.com/user-attachments/assets/9b2c5ff1-21db-4bfa-82f0-982e0c0604c4)
+
+ 
+
+ 
+ Desenvolvimento Supply Mida
  
  Objetivo: avaliar os conhecimentos tecnicos dos candidatos a desenvolvedor
- 
- Pré-requisitos: 
-  - Java JDK 11 ou superior
-  - Wildfly 24 ou superior
-  - Maven 3.9.0 ou superior
   
-  Objetivo do teste
+  Objetivo
   - 1) ler e carregar na base de dados os contatos contidos no arquivo contatos.txt levando em consideração que o contato tem como chave primária o cpf/cnpj, e pode ter mais de um endereço.
     - no arquivo quando o contato tem mais de um endereço, os dados do contato se repete, o que não pode ocorrer na base de dados.
   - 2) exibir de forma tabular na página index.xhtml  os contatos e endereços.
