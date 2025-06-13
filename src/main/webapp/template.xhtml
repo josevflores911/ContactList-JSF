@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+
+<h:head>
+	<title>SM Teste Dev</title>
+	<!-- <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/css/style.css" /> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+	<!-- <script type="text/javascript" src="js/jquery-3.7.1.js"></script> -->
+	
+	<h:outputStylesheet name="css/style.css" />
+	<h:outputStylesheet name="css/jquery-ui.css" />
+	
+	<h:outputScript library="js" name="jquery-3.7.1.js" />
+	<h:outputScript library="js" name="jquery-ui.js" />
+	<h:outputScript library="js" name="utils.js" />
+</h:head>
+
+
+
+<h:body>
+	<p:menubar>
+		<p:menuitem value="Home" outcome="home" icon="pi pi-home" />
+		<p:menuitem value="Contato" outcome="contatos" icon="pi pi-users" />
+	</p:menubar>
+
+	<ui:insert name="content" />
+</h:body>
+</html>

@@ -1,0 +1,10 @@
+repository\ContatoRepository.class
+bootstrap\ContatoLoader.class
+model\Contato.class
+service\package-info.class
+service\NavigationBean.class
+service\ContatoService.class
+model\Endereco.class
+controller\ContatoBean.class
+model\Contato_.class
+model\Endereco_.class
