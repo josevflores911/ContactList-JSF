@@ -7,7 +7,7 @@
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px; height: 100vh;">
     <img src="https://github.com/user-attachments/assets/8d2d9774-aa4f-4370-960a-5a374f3fab36" 
-         alt="Image 1" style="width: 500px; height: auto;">
+         alt="Image 1" style="width: 500px; height: auto;margin-left:200px">
 </div>
 
 
@@ -28,4 +28,4 @@
   
   Executando o projeto
   - Para executa o projeto é necessário realizar o build (mvn install) e usar o artefato gerado em target/ no wildfly, o projeto já irá criar o banco de dados necessário para o teste, o perfil do wildfly pode ser o standalone.xml sem a necessidade de configurações extras
-  - Para acessar o projeto, acsse viar browser a url http://localhost:8080/teste
+  - Para acessar o projeto, acsse viar browser a url http://localhost:8080/main
