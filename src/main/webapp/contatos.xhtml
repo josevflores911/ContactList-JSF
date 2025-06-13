@@ -5,7 +5,6 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
 
-
 	<ui:define name="content">
 
 		<div
@@ -55,7 +54,7 @@
 						styleClass="ui-fluid" style="width:100%;">
 
 						<!-- Contato Fields -->
-
+						<h:outputLabel for="" value="" />
 						<h:outputLabel for="cpf" value="CPF/CNPJ:" />
 						<p:inputText id="cpf" value="#{contatoBean.novoContato.cpfCnpj}"
 							placeholder="Digite CPF ou CNPJ" style="width:100%;" />
@@ -66,12 +65,14 @@
 						<p:inputText id="nome" value="#{contatoBean.novoContato.nome}"
 							placeholder="Digite o nome completo" style="width:100%;" />
 
-
+						<h:outputLabel for="" value="" />
 						<!-- Endereço Fields -->
 						<h:outputLabel for="endereco" value="Endereço:" />
+
 						<p:inputText id="endereco"
 							value="#{contatoBean.novoContato.enderecos[0].endereco}"
 							placeholder="Rua, número, complemento" style="width:100%;" />
+
 
 						<h:outputLabel for="bairro" value="Bairro:" />
 						<p:inputText id="bairro"
