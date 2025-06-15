@@ -10,8 +10,10 @@ import java.util.List;
 
 @Stateless
 public class ContatoRepository {
+	
+	public static final String H2_DB="sm-teste";
 
-    @PersistenceContext(unitName = "sm-teste")
+    @PersistenceContext(unitName = H2_DB)
     private EntityManager em;
 
     public void save(Contato contato) {

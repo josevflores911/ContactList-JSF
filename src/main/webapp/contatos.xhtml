@@ -17,19 +17,24 @@
 
 		<p:panel styleClass="custom-panel" header="Lista de Contatos"
 			style="margin: 0 auto; width: 90%;">
+
+
 			<h:form id="formPrincipal">
-				<p:dataTable value="#{contatoBean.contatos}" var="contato"
-					paginator="true" rows="10" styleClass="custom-table"
-					rowHover="true" stripedRows="true" sortMode="multiple"
-					responsiveLayout="scroll">
+			
+
+				<p:dataTable 
+					value="#{contatoBean.contatos}" var="contato" paginator="true"
+					rows="10" styleClass="custom-table" rowHover="true"
+					stripedRows="true" sortMode="multiple" responsiveLayout="scroll">
 
 					<p:column headerText="CPF/CNPJ" sortBy="#{contato.cpfCnpj}"
+						filterBy="#{contato.cpfCnpj}" 
 						style="width: 15%; text-align: center;">
-						<h:outputText value="#{contato.cpfCnpj}" styleClass="cpfCnpjCell" />
+						<h:outputText value="#{contato.cpfCnpj}" />
 					</p:column>
 
 					<p:column headerText="Nome" sortBy="#{contato.nome}"
-						style="width: 25%;">
+						style="width: 25%;" filterBy="#{contato.nome}">
 						<h:outputText value="#{contato.nome}" />
 					</p:column>
 
