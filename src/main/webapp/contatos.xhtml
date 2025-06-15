@@ -41,6 +41,23 @@
 						</ui:repeat>
 					</p:column>
 
+					<p:column headerText="Ações"
+						style="width: 15%; text-align: center;">
+						<!-- Botão de atualizar -->
+						<p:commandButton icon="pi pi-pencil" title="Editar"
+							action="#{contatoBean.prepararEdicao(contato)}"
+							oncomplete="PF('novoContatoDialog').show()"
+							update=":formNovoContato"
+							styleClass="p-button-rounded p-button-warning p-mr-2" />
+
+						<!-- Botão de excluir -->
+						<p:commandButton icon="pi pi-trash" title="Excluir"
+							action="#{contatoBean.remove(contato)}" update=":formPrincipal"
+							styleClass="p-button-rounded p-button-danger"
+							onclick="return confirm('Tem certeza que deseja excluir este contato?');" />
+					</p:column>
+
+
 				</p:dataTable>
 			</h:form>
 
@@ -98,8 +115,10 @@
 
 					<p:separator />
 
-					<p:commandButton value="Salvar"
-						action="#{contatoBean.salvarNovoContato}" update=":formPrincipal"
+					<p:commandButton
+						value="#{contatoBean.novoContato.cpfCnpj == null ? 'Salvar' : 'Atualizar'}"
+						action="#{contatoBean.salvarOuAtualizarContato}"
+						update=":formPrincipal"
 						oncomplete="PF('novoContatoDialog').hide()" resetValues="true"
 						styleClass="ui-button-primary" style="margin-top:1rem;" />
 				</h:form>

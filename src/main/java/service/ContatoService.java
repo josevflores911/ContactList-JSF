@@ -27,4 +27,13 @@ public class ContatoService {
     public List<Contato> listAll() {
         return repository.listAll();
     }
+    
+    public void update(Contato contato) {
+    	repository.update(contato);
+    }
+    
+    public void remove(Contato contato) {
+    	repository.remove(contato);
+      
+    }
 }

@@ -33,5 +33,14 @@ public class ContatoRepository {
         
     }
     
+    public void update(Contato contato) {
+    	em.merge(contato);
+    }
+    
+    public void remove(Contato contato) {
+    	Contato managedContato = em.merge(contato); 
+        em.remove(managedContato);
+    }
+    
     
 }

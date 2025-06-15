@@ -19,45 +19,61 @@ import service.ContatoService;
 @ViewScoped
 public class ContatoBean implements Serializable {
 
-  private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-  @EJB
-  private ContatoService service;
+	@EJB
+	private ContatoService service;
 
-  private List<Contato> contatos;
-  private Contato novoContato;
+	private List<Contato> contatos;
+	private Contato novoContato;
 
-  @PostConstruct
-  public void init() {
-      this.contatos = service.listAll();
-      this.novoContato = new Contato();
-      novoContato.setEnderecos(new ArrayList<>());
-      novoContato.getEnderecos().add(new Endereco());
-  }
-
-  public void salvarNovoContato() {
-	   
-	    for (Endereco e : novoContato.getEnderecos()) {
-	        e.setContato(novoContato);
-	    }
-
-	    service.save(novoContato);
-	    contatos.add(novoContato);
-
-	    novoContato = new Contato();
-	    novoContato.setEnderecos(new ArrayList<>());
-	    novoContato.getEnderecos().add(new Endereco());
+	@PostConstruct
+	public void init() {
+		this.contatos = service.listAll();
+		this.novoContato = new Contato();
+		novoContato.setEnderecos(new ArrayList<>());
+		novoContato.getEnderecos().add(new Endereco());
 	}
 
-  public List<Contato> getContatos() {
-    return contatos;
-  }
+	public void salvarOuAtualizarContato() {
+		for (Endereco e : novoContato.getEnderecos()) {
+			e.setContato(novoContato);
+		}
 
-  public Contato getNovoContato() {
-    return novoContato;
-  }
+		if (novoContato.getCpfCnpj() == null) {
 
-  public void setNovoContato(Contato novoContato) {
-    this.novoContato = novoContato;
-  }
+			service.save(novoContato);
+			contatos.add(novoContato);
+		} else {
+
+			service.update(novoContato);
+			
+		}
+
+		novoContato = new Contato();
+		novoContato.setEnderecos(new ArrayList<>());
+		novoContato.getEnderecos().add(new Endereco());
+	}
+	
+	public void remove(Contato contato) {
+		service.remove(contato);
+		contatos=service.listAll();
+      
+    }
+
+	public List<Contato> getContatos() {
+		return contatos;
+	}
+
+	public Contato getNovoContato() {
+		return novoContato;
+	}
+
+	public void setNovoContato(Contato novoContato) {
+		this.novoContato = novoContato;
+	}
+	
+	public void prepararEdicao(Contato contato) {
+	    this.novoContato = contato;
+	}
 }
